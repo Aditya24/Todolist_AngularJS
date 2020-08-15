@@ -1,0 +1,47 @@
+@import "../variables.scss";
+:host {
+  height: 100%;
+}
+
+.app {
+  height: 90% !important;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+
+  &__header {
+    color: white;
+    background: $primary;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  :host {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    background: $dark;
+  }
+
+  .app {
+    height: 700px;
+    width: 400px;
+    border-radius: 1rem;
+    background-color: #c8cecf;
+  }
+  .text-center {
+    display: flex;
+    justify-content: center;
+  }
+  .app__header {
+    background: #2fc1e2;
+    padding: 5px;
+    text-align: center;
+  }
+  .todo-list__item {
+    color: #060606;
+  }
+  .todo-list__item--completed {
+    color: red;
+  }
+}
